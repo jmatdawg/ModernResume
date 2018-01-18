@@ -16,35 +16,35 @@ console.log('* Attempting recipes from Pinterest')
 
 console.log('My Previous Experience:')
 
-var displayPosition( jobtitle, companyname, description) {
-    console log(`* ${jobtitle} at ${companyname} - ${description})
-
+let displayPosition=function(jobtitle, companyname, description){
+    console.log(`* ${jobtitle} at ${companyname}`)
+    console.log('-' + description)
 }
+displayPosition(`Math Teacher`, `St. Barnabas Catholic School`, `Taught middle school mathematics curriculum`);
 
-console.log('* Math Teacher at St. Barnabas Catholic School')
+displayPosition(`Financial Services Professional`, `Old National Bank`, `Explored Fraud Investigations, Retail Banking, and Retail Data Analytics of a large financial institution`);
 
-console.log('- Taught middle school mathematics curriculum')
-
-console.log('* Financial Services Professional at Old National Bank')
-
-console.log('- Explored Fraud Investigations, Retail Banking, and Retail Data Analytics of a large financial institution')
-
-console.log('* Student Tutor at Alabama State University Quant Resource Center')
-
-console.log('- Tutored and provided assessments to ASU students in college-level math courses')
+displayPosition(`Student Tutor`, `Alabama State University Quant Resource Center`, `Tutored and provided assessments to ASU students in college-level math courses`)
 
 console.log('My Skills')
 
-console.log('* Dancing')
+let displaySkill=function(skill, iscool){
+    if (iscool ===true){
+    console.log(`* Check it: ${skill}`);
+    }else{
+    console.log(`* ${skill}`);
+}}
 
-console.log('* Check It: Backflips')
+displaySkill('Dancing', false);
 
-console.log('* Public Speaking')
+displaySkill('Backflips', true);
 
-console.log('* Painting')
+displaySkill('Public Speaking', false);
 
-console.log('* Check It: Gin Rummy')
+displaySkill('Painting', false);
 
-console.log('* Check It: Opera Singing')
+displaySkill('Gin Rummy', true);
 
-console.log('* Check It: Changing Tires')
+displaySkill('Opera Singing', false);
+
+displaySkill('Changing Tires', true);
